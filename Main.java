@@ -50,7 +50,7 @@ public class Main {
             switch (op) {
                 case "1":
                     Arrays.sort(employees, new SalaryComparatorLM());
-                    System.out.printf("\n*** Отсортированный массив сотрудников ***\n\n");
+                    System.out.printf("\n*** Отсортированный  массив сотрудников по заработной плате от меньшей к большей ***\n\n");
                     for (Employee employee : employees) {
                         System.out.println(employee);
                     }
@@ -58,7 +58,7 @@ public class Main {
                     break;
                 case "2":
                     Arrays.sort(employees, new SalaryComparatorML());
-                    System.out.printf("\n*** Отсортированный массив сотрудников ***\n\n");
+                    System.out.printf("\n*** Отсортированный массив сотрудников по заработной плате от большей к меньшей ***\n\n");
                     for (Employee employee : employees) {
                         System.out.println(employee);
                     }
@@ -66,7 +66,7 @@ public class Main {
                     break;
                 case "3":
                     Arrays.sort(employees, new AgeComparator());
-                    System.out.printf("\n*** Отсортированный массив сотрудников ***\n\n");
+                    System.out.printf("\n*** Отсортированный по возрасту массив сотрудников ***\n\n");
                     for (Employee employee : employees) {
                         System.out.println(employee);
                     }
@@ -76,7 +76,7 @@ public class Main {
                     filter = false;
                     break;
                 default:
-                    System.out.println("Введена неправильная операция");
+                    System.out.println("Введена неправильная операция!");
                     System.out.println();
                     break;
             }
